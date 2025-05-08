@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%@ page import="java.util.List" %>
+<%@ page import="javax.servlet.http.*, javax.servlet.*" %>
 
 <html>
 <head>
@@ -9,7 +9,8 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding-bottom: 60px; /* 푸터 공간 확보 */
+            background-color: #f5f5f5;
         }
 
         .header {
@@ -21,19 +22,15 @@
 
         .post-content {
             padding: 20px;
-            margin: 20px;
+            margin: 20px auto;
+            max-width: 800px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .post-content img {
+            max-width: 100%;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -48,14 +45,12 @@
 <div class="post-content">
     <h3>${post.title}</h3>
     <p>${post.description}</p>
-    <img src="${post.imageUrl}" alt="${post.title}" style="width:100%;">
-    <p><a href="main.jsp">목록으로 돌아가기</a></p>
+    <img src="${post.imageUrl}" alt="${post.title}">
+    <p><a href="main.jsp">← 목록으로 돌아가기</a></p>
 </div>
 
-<!-- 푸터 -->
-<div class="footer">
-    <p>&copy; 2025 여행 게시판. All Rights Reserved.</p>
-</div>
+<!-- 푸터 포함 -->
+<jsp:include page="footer.jsp" />
 
 </body>
 </html>
