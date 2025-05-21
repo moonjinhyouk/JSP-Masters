@@ -6,7 +6,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>TourBoard | 전 세계 여행 커뮤니티</title>
+    <title>TourList | 전 세계 여행 커뮤니티</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/New.css">
 </head>
@@ -51,7 +51,7 @@
                 <div class="card-body">
                     <h5 class="card-title">🌟 소개</h5>
                     <p class="card-text">
-                        TourBoard는 세계의 여행지를 공유하고 추천하는 플랫폼입니다.
+                        TourList는 세계의 여행지를 공유하고 추천하는 플랫폼입니다.
                         <br>당신만의 특별한 여행 스토리를 공유하세요!
                     </p>
                 </div>
