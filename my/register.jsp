@@ -27,24 +27,28 @@
 </nav>
 
 <!-- ✅ 회원가입 폼 -->
-<main class="container" style="margin-top: 80px;">
-    <h2 class="my-4">회원가입</h2>
-    <form action="registerProcess.jsp" method="post">
-        <div class="mb-3">
-            <label for="userId" class="form-label">아이디</label>
-            <input type="text" class="form-control" id="userId" name="userId" required>
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">비밀번호</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">이메일</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <button type="submit" class="btn btn-primary">회원가입</button>
-        <a href="New.jsp" class="btn btn-secondary ms-2">취소</a> <!-- 취소 버튼 추가 -->
-    </form>
+<main class="container d-flex justify-content-center" style="margin-top: 100px;">
+    <div class="w-100" style="max-width: 500px;">
+        <h2 class="my-4 text-center">회원가입</h2>
+        <form action="registerProcess.jsp" method="post">
+            <div class="mb-3">
+                <label for="userId" class="form-label">아이디</label>
+                <input type="text" class="form-control input-narrow" id="userId" name="userId" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">비밀번호</label>
+                <input type="password" class="form-control input-narrow" id="password" name="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">이메일</label>
+                <input type="email" class="form-control input-narrow" id="email" name="email" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">회원가입</button>
+                <a href="New.jsp" class="btn btn-secondary ms-2">취소</a>
+            </div>
+        </form>
+    </div>
 </main>
 
 <!-- ✅ Footer -->
