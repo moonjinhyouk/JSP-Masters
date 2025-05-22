@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!-- ✅ 네비게이션 바 -->
+<!-- 네비게이션 바 -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="index.jsp">🌍 TourList</a>
@@ -34,19 +34,16 @@
             <li class="nav-item">
               <a class="nav-link" href="logout.jsp">로그아웃</a>
             </li>
-            <li class="nav-item">
-              <a class="btn btn-light btn-sm ms-2" href="write.jsp">글쓰기</a>
-            </li>
         <% } %>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- ✅ 메인 콘텐츠 -->
+<!-- 메인 콘텐츠 -->
 <main class="container" style="margin-top: 80px;">
     <div class="row">
-        <!-- 왼쪽 소개 카드 -->
+        <!-- 왼쪽 소개 카드 및 나라별 필터 -->
         <div class="col-md-4">
             <div class="card shadow-sm mb-4">
                 <div class="card-body">
@@ -58,7 +55,6 @@
                 </div>
             </div>
 
-            <!-- 나라별 필터 리스트 -->
             <div class="card shadow-sm">
                 <div class="card-header bg-light fw-bold">🌏 나라별 보기</div>
                 <ul class="list-group list-group-flush">
@@ -127,14 +123,18 @@
                 <div class="card mb-3 shadow-sm">
                     <div class="card-body">
                         <h5><a href="view.jsp?id=1" class="text-decoration-none text-primary">제주도 추천 여행지</a></h5>
-                        <p class="text-muted">by 홍길동 | 2025-05-08</p>
+                        <p class="text-muted">
+                            by <a href="userPosts.jsp?author=홍길동" class="text-decoration-none">홍길동</a> | 2025-05-08
+                        </p>
                         <p class="card-text">맑은 바다와 아름다운 오름들, 맛있는 흑돼지까지! 제주도만의 매력을 소개합니다.</p>
                     </div>
                 </div>
                 <div class="card mb-3 shadow-sm">
                     <div class="card-body">
                         <h5><a href="view.jsp?id=2" class="text-decoration-none text-primary">오사카 맛집 리스트</a></h5>
-                        <p class="text-muted">by 이몽룡 | 2025-05-07</p>
+                        <p class="text-muted">
+                            by <a href="userPosts.jsp?author=이몽룡" class="text-decoration-none">이몽룡</a> | 2025-05-07
+                        </p>
                         <p class="card-text">타코야키, 오코노미야키 등 오사카에서 꼭 가봐야 할 맛집을 소개합니다.</p>
                     </div>
                 </div>
@@ -144,7 +144,9 @@
                 <div class="card mb-3 shadow-sm">
                     <div class="card-body">
                         <h5><a href="view.jsp?id=1" class="text-decoration-none text-primary">제주도 추천 여행지</a></h5>
-                        <p class="text-muted">by 홍길동 | 2025-05-08</p>
+                        <p class="text-muted">
+                            by <a href="userPosts.jsp?author=홍길동" class="text-decoration-none">홍길동</a> | 2025-05-08
+                        </p>
                         <p class="card-text">맑은 바다와 아름다운 오름들, 맛있는 흑돼지까지! 제주도만의 매력을 소개합니다.</p>
                     </div>
                 </div>
@@ -152,7 +154,9 @@
                 <div class="card mb-3 shadow-sm">
                     <div class="card-body">
                         <h5><a href="view.jsp?id=2" class="text-decoration-none text-primary">오사카 맛집 리스트</a></h5>
-                        <p class="text-muted">by 이몽룡 | 2025-05-07</p>
+                        <p class="text-muted">
+                            by <a href="userPosts.jsp?author=이몽룡" class="text-decoration-none">이몽룡</a> | 2025-05-07
+                        </p>
                         <p class="card-text">타코야키, 오코노미야키 등 오사카에서 꼭 가봐야 할 맛집을 소개합니다.</p>
                     </div>
                 </div>
@@ -163,7 +167,7 @@
     </div>
 </main>
 
-<!-- ✅ Footer -->
+<!-- Footer -->
 <footer class="bg-light text-center text-muted py-3 mt-5 border-top">
     ⓒ 2025 TourBoard. All rights reserved.
 </footer>
