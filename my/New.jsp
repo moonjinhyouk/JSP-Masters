@@ -63,7 +63,7 @@
                 <div class="card-header bg-light fw-bold">🌏 나라별 보기</div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <a href="index.jsp" class="text-decoration-none text-dark">🌐 전체 보기</a>
+                        <a href="New.jsp" class="text-decoration-none text-dark">🌐 전체 보기</a>
                     </li>
                     <li class="list-group-item">
                         <a href="#" onclick="goCountry('한국'); return false;" class="text-decoration-none text-dark">
@@ -177,7 +177,7 @@
             alert("로그인이 필요합니다.");
             window.location.href = "login.jsp";
         } else {
-            window.location.href = "index.jsp?country=" + encodeURIComponent(country);
+            window.location.href = "New.jsp?country=" + encodeURIComponent(country);
         }
     }
 </script>
